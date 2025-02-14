@@ -1,6 +1,9 @@
 # python virtual environment
 .venv/
 
+# ruff cache
+.ruff_cache/
+
 # pytest cache
 .pytest_cache/
 
