@@ -10,6 +10,8 @@ requires-python = ">=3.12"
 dependencies = [
     "numpy>=2.2.3",
     "pandas>=2.2.3",
+    "ipykernel>=6.29.5",
+    "pytest>=8.3.4",
 ]
 
 [project.scripts]
@@ -18,12 +20,6 @@ uv-cookie = "uv_cookie:main"
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
-
-[dependency-groups]
-dev = [
-    "ipykernel>=6.29.5",
-    "pytest>=8.3.4",
-]
 
 [tool.ruff]
 extend-include = ["*.ipynb"]
