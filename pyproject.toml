@@ -7,7 +7,10 @@ authors = [
     { name = "Logan Bennett", email = "bennett.j.logan@gmail.com" }
 ]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "numpy>=2.2.3",
+    "pandas>=2.2.3",
+]
 
 [project.scripts]
 uv-cookie = "uv_cookie:main"
@@ -15,3 +18,26 @@ uv-cookie = "uv_cookie:main"
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29.5",
+    "pytest>=8.3.4",
+]
+
+[tool.ruff]
+extend-include = ["*.ipynb"]
+
+[tool.ruff.format]
+quote-style = "single"
+
+[tool.ruff.lint]
+extend-select = ["E501", "W", "N", "R", "I"]
+
+[tool.pytest.ini_options]
+testpaths=['tests/tests_to_run.py']
+
+[tool.pyright]
+exclude = ['.venv']
+venvPath = '.'
+venv = '.venv'
