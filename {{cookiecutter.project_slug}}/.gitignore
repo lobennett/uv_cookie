@@ -1,3 +1,6 @@
+# dotenv file
+.env
+
 # python virtual environment
 .venv/
 
