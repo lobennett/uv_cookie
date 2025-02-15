@@ -36,7 +36,7 @@
 
 ## Project-specific environment variables
 
-If you need to define environment variables for the project (e.g. API keys), 
+If you need to define environment variables for the project (e.g. API keys or simple configuration settings), 
 first create the .env file (which will not be added to the git repo, in order to prevent leakage of private information):
 
 ```
