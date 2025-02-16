@@ -32,3 +32,20 @@
     },
 }
 ```
+
+
+## Project-specific environment variables
+
+If you need to define environment variables for the project (e.g. API keys or simple configuration settings), 
+first create the .env file (which will not be added to the git repo, in order to prevent leakage of private information):
+
+```
+cp .env.example .env
+```
+
+Then define the variables there, which can be accessed via `os.environ` in Python after using the following commands:
+
+```
+from dotenv import load_dotenv
+load_dotenv()
+```
