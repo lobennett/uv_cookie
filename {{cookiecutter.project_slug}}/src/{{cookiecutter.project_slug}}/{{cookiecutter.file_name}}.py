@@ -1,19 +1,19 @@
-print(
-    'kkkkkkkkjlskdjflksdjflsdjflkds jflksdjflkjdslkfjsd lkjflsdjflsdjfldsjflsdkjflsdjflksdjflksdjflksdjflskdjflsdkjfklsdjkl'
-)
+# Example of a well-documented function
+def calculate_bmi(weight: float, height: float) -> float:
+    """Calculate Body Mass Index (BMI) given weight and height.
 
+    Args:
+        weight (float): The weight of the individual in kilograms (kg).
+        height (float): The height of the individual in meters (m).
 
-def test_func(x):
-    value = x + 1
-    return value
+    Raises:
+        ValueError: If either weight or height is non-positive.
 
-
-def return_boo():
-    return 'boo'
-
-
-a = 1
-
-junk = '22'
-
-hello = 'fast'
+    Returns:
+        float: The calculated BMI value, rounded to two decimal places.
+    """
+    if weight <= 0 or height <= 0:
+        raise ValueError("Weight and height must be positive values.")
+    
+    bmi = weight / (height ** 2)
+    return round(bmi, 2)
