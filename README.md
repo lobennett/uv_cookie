@@ -7,6 +7,8 @@ This is a modern Cookiecutter template that can be used to create a Python proje
 - [ruff](https://github.com/astral-sh/ruff) for linting
 - [pytest](https://docs.pytest.org/en/latest/) for testing
 - [pre-commit](https://pre-commit.com/) for pre-commit hooks
+- [pyright](https://github.com/RobertCraigie/pyright-python) for static type checking
+- [conventional-pre-commit](https://github.com/compilerla/conventional-pre-commit) for commit message linting
 - CI/CD with [GitHub Actions](https://docs.github.com/en/actions)
 - Comes with ([pandas](https://pandas.pydata.org/) and [numpy](https://numpy.org/)) pre-installed
 
