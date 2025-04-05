@@ -22,7 +22,7 @@ dev = [
 ]
 
 [project.scripts]
-uv-cookie = "uv_cookie:main"
+{{cookiecutter.project_slug}} = "{{cookiecutter.project_slug}}:main"
 
 [build-system]
 requires = ["hatchling"]
