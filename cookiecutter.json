@@ -1,15 +1,17 @@
 {
-    "project_slug": "uv_cookie",
-    "name": "Your Name",
-    "email": "email@example.com",
-    "version": "0.1.0",
-    "description": "Add your project description here",
-    "file_name": "some_things",
-    "_copy_without_render": [
-        ".github",
-        ".vscode",
-        ".gitignore",
-        ".pre-commit-config.yaml",
-        ".python-version"
-    ]
+  "project_slug": "uv_cookie",
+  "name": "Your Name",
+  "email": "email@example.com",
+  "name_for_license": "Name of license holder",
+  "year_for_license": "2025",
+  "version": "0.1.0",
+  "description": "Add your project description here",
+  "file_name": "some_things",
+  "_copy_without_render": [
+    ".github",
+    ".vscode",
+    ".gitignore",
+    ".pre-commit-config.yaml",
+    ".python-version"
+  ]
 }
